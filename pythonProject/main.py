@@ -10,7 +10,10 @@ def print_hi(name):
 
 
 # Press the green button in the gutter to run the script.
-if __name__ == '__main__':
+a = 2
+if a == 1:
     print_hi('PyCharm')
+else :
+    print("it's nono")
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
