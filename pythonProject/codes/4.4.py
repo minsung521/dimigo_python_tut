@@ -3,20 +3,11 @@
 
 a = int(input())
 b = int(input())
+c = int(input())
 
-def add(a,b):
-	return a+b
 
-def sub(a,b):
-	return a-b
+def my_max(a, b, c):
+    return a if a > b and a > c else (b if b > c else c)
 
-def mul(a,b):
-	return a*b
 
-def div(a,b):
-	return a/b
-
-print(add(a,b))
-print(sub(a,b))
-print(mul(a,b))
-print(div(a,b))
+print(my_max(a, b, c))
