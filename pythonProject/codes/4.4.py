@@ -7,6 +7,10 @@ b = int(input())  # 숫자2
 
 def swap(a, b):
     return b, a
+# def swap(a,b):
+#     t = a
+#     a = b
+#     b = t
 
 
 a, b = swap(a, b)
