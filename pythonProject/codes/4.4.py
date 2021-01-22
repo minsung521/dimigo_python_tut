@@ -1,18 +1,19 @@
 # -*- coding: utf-8 -*-
 # UTF-8 encoding when using korean
 
-a = int(input())  # 숫자1
-b = int(input())  # 숫자2
+my_list = ['a', 1, 2, 3, 'b', ['apple', 'banana'], 4]
 
+# [1, 2]을 출력하세요
+print(my_list[1:3])
 
-def swap(a, b):
-    return b, a
-# def swap(a,b):
-#     t = a
-#     a = b
-#     b = t
+# [3, 'b']를 출력하세요
+print(my_list[3:5])
 
+# [1, 2, 3, 'b']를 출력하세요
+print(my_list[1:5])
 
-a, b = swap(a, b)
+# [4]를 출력하세요
+print(my_list[6:])
 
-print(a, b)  # 실행 전에 미리 값을 예상해 보세요.
+# ['a', 3, 4]를 출력하세요
+print(my_list[::3])
