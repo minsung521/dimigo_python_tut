@@ -1,8 +1,12 @@
 # -*- coding: utf-8 -*-
 # UTF-8 encoding when using korean
 
-num = input()
+s = "You need Java"
 
-# YYMMDD-DDDDDDD 형식
-print(num[:6])
-print(num[7:])
+A = s.split()
+
+A[2] = "Python"
+
+a = " ".join(A)
+
+print(a)
