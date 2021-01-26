@@ -1,12 +1,10 @@
 # -*- coding: utf-8 -*-
 # UTF-8 encoding when using korean
 
-s = "You need Java"
+s = input()
 
-A = s.split()
+l = ["c", "c++", "java", "python", "c#", "javascript"]
 
-A[2] = "Python"
-
-a = " ".join(A)
-
-print(a)
+for lang in l:
+	if lang.count(s):
+		print(lang)
