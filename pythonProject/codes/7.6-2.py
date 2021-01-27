@@ -1,10 +1,12 @@
 # -*- coding: utf-8 -*-
 # UTF-8 encoding when using korean
 
-s = input()
+month = 8
+date = 30
+day = "금요일"
+city = "서울"
+temperature = 26.5
 
-l = ["c", "c++", "java", "python", "c#", "javascript"]
+s = "%d월 %d일 %s 현재 %s 기온은 %.1f도입니다."
 
-for lang in l:
-	if lang.count(s):
-		print(lang)
+print(s % (month,date,day,city,temperature))
