@@ -1,10 +1,13 @@
 # -*- coding: utf-8 -*-
 # UTF-8 encoding when using korean
 
-s = input()
+phones =  {'model': 'iPhone12', 'company': 'apple', 'year': 2020 }
 
-l = s.split(' ')
+print(phones['model'])
 
-result = set(l)
+phones['price'] = 1000000
+print(phones)
 
-print(len(result))
+del phones['year']
+
+print(phones)
