@@ -1,13 +1,11 @@
 # -*- coding: utf-8 -*-
 # UTF-8 encoding when using korean
 
-phones =  {'model': 'iPhone12', 'company': 'apple', 'year': 2020 }
+d = {"apple": 1, "kiwi": 2, "banana": 3, "mango": 4, "melon": 5}
 
-print(phones['model'])
+d2 = {}
 
-phones['price'] = 1000000
-print(phones)
+for i in d.items():
+    d2[i[1]] = i[0]
 
-del phones['year']
-
-print(phones)
+print(d2)
