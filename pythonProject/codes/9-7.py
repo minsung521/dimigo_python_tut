@@ -1,11 +1,15 @@
 # -*- coding: utf-8 -*-
 # UTF-8 encoding when using korean
 
-d = {"apple": 1, "kiwi": 2, "banana": 3, "mango": 4, "melon": 5}
+apple = int(input())  # 사과 수
+banana = int(input())  # 바나나 수
+kiwi = int(input())  # 키위 수
 
-d2 = {}
+fruits = {"apple": apple, "banana": banana, "kiwi": kiwi}
 
-for i in d.items():
-    d2[i[1]] = i[0]
+total = 0
 
-print(d2)
+for i in fruits.values():
+    total = total + i
+
+print(total)
