@@ -1,6 +1,15 @@
-f = open("../files/test.txt", 'w')  # 파일 쓰기모드로 열기
+f = open("../files/test.txt", 'r')  # 파일 쓰기모드로 열기
 
-f.write('pizza\n')
-f.write('pasta\n')
+for line in f:
+	print(line, end="")
 
-f.close()  # 파일 닫기
+f.close()
+
+#
+# f = open('test.txt', 'r')
+# lines = f.readlines()
+# print(lines)  # 리스트로 출력
+#
+# for line in lines:
+#     print(line, end='')
+# f.close()
