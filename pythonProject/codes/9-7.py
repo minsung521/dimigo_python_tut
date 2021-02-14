@@ -1,15 +1,11 @@
-f = open("../files/test.txt", 'r')  # 파일 쓰기모드로 열기
 
-for line in f:
-	print(line, end="")
+file = open('../files/score.txt','w')
+file.write("kor 100\n")
+file.write("eng 95\n")
+file.write("mat 90\n")
+file.close()
 
-f.close()
-
-#
-# f = open('test.txt', 'r')
-# lines = f.readlines()
-# print(lines)  # 리스트로 출력
-#
-# for line in lines:
-#     print(line, end='')
-# f.close()
+file = open('../files/score.txt','r')
+for line in file.readlines():
+	print(line,end="")
+file.close()
