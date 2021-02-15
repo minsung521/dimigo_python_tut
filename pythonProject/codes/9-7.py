@@ -1,11 +1,20 @@
+# -*- coding: utf-8 -*-
+# UTF-8 encoding when using korean
 
-file = open('../files/score.txt','w')
-file.write("kor 100\n")
-file.write("eng 95\n")
-file.write("mat 90\n")
+fruits = ["banana", "apple", "kiwi", "grape"]
+
+fruits.sort()
+
+file = open('sort.txt','w')
+
+for fruit in fruits:
+	file.write(fruit+"\n")
+
 file.close()
 
-file = open('../files/score.txt','r')
+file = open('sort.txt','r')
+
 for line in file.readlines():
-	print(line,end="")
+	print(line,end='')
+
 file.close()
