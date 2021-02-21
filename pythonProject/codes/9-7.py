@@ -1,20 +1,8 @@
-# -*- coding: utf-8 -*-
-# UTF-8 encoding when using korean
+sum = 0
 
-fruits = ["banana", "apple", "kiwi", "grape"]
+for x in range(3):
 
-fruits.sort()
+    for y in range(2):
+     sum = sum + y
 
-file = open('sort.txt','w')
-
-for fruit in fruits:
-	file.write(fruit+"\n")
-
-file.close()
-
-file = open('sort.txt','r')
-
-for line in file.readlines():
-	print(line,end='')
-
-file.close()
+print(sum)
